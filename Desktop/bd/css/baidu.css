@@ -1,0 +1,424 @@
+body{
+    overflow-y: hidden;
+    min-width: 1100px;
+    font-family: 'Microsoft YaHei';
+}
+.clearFix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header{
+    position: relative;
+    z-index: 1003;
+    height: 56px;
+    text-align: center;
+    background: #18223d;
+}
+
+.header .pull-left{
+    padding: 6px 0 0 33px;
+    line-height: 0;
+    float: left;
+}
+.header a{
+    text-decoration: none;
+    color: rgba(255,255,255,.5);
+}
+.logo{
+    display: inline-block;
+    width: 104px;
+    height: 38px;
+    background: url("../img/home-icon.png");
+}
+.menu-wrap{
+    position: relative;
+    width: 684px;
+    margin: auto;
+    /*float: left;*/
+}
+.menu-wrap ul{
+    line-height: 56px;
+    color: #fff;
+    list-style: none;
+}
+
+.menu-wrap ul li{
+    cursor: pointer;
+    float: left;
+}
+
+.menu-wrap ul .active a{
+    color: #fff;
+}
+
+.menu-wrap ul li a{
+    position: relative;
+    display: inline-block;
+    height: 56px;
+    padding: 0 17px;
+}
+.header a:hover{
+    color: #fff;
+}
+.menu-wrap ul .active a span{
+    position: absolute;
+    top: 23px;
+    left: -3px;
+    width: 12px;
+    height: 12px;
+    background: #4090ff;
+}
+
+.pull-right{
+    float: right;
+    /*padding: 13.5px;*/
+}
+#blue-block{
+    display: inline-block;
+    overflow: hidden;
+    height: 4px;
+    position: absolute;
+    bottom: -55px;
+    background: #4090ff;
+}
+.pull-right a{
+    display: inline-block;
+}
+.account , .share{
+    display: inline-block;
+    height: 29px;
+    vertical-align: middle;
+    /*position: relative;*/
+    margin: 15px 10px 0 10px;
+}
+.account a{
+    padding: 0 12px 0;
+    border: 1px solid #ffffff;
+    font-size: 13px;
+    border-radius: 15px;
+    line-height: 26px;
+    transition: .2s;
+    margin-right: 3px;
+}
+.account a:hover{
+    background-color: rgba(255,255,255,.2);
+}
+.share a{
+    width: 30px;
+    height: 30px;
+}
+.share a:hover{
+    margin-bottom: -2px;
+}
+.wechat{
+    background: url("../img/home-icon.png") -136px -38px;
+}
+.weibo{
+    background: url("../img/home-icon.png") -175px -38px;
+}
+.wechat-code{
+    display: none;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    background-color: #fff;
+}
+.wechat-code , .wechat-code img{
+    width: 100px;
+}
+
+.container{
+    height: 616px;
+    min-width: 1100px;
+    /*width: 100%;*/
+    /*height: 900px;*/
+    /*background-color: #1F2C4E;*/
+}
+.bg{
+    height: 769px;
+    position: relative;
+    margin-left: -50%;
+    width: 100%;
+    left: 50%;
+}
+
+#canvas{
+    position: absolute;
+    z-index: 1001;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+#canvas canvas{
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.c1{
+    width: 416.97px;
+    height: 416.97px;
+    margin-left: -216.824px;
+    margin-top: -215.99px;
+}
+.c2{
+    width: 416.97px;
+    height: 416.97px;
+    margin-left: -208.485px;
+    margin-top: -208.485px;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-animation: rotation1 300s linear infinite;
+    -moz-animation: rotation1 300s linear infinite;
+    -o-animation: rotation1 300s linear infinite;
+    animation: rotation1 300s linear infinite;
+}
+.c3{
+    width: 733.939px;
+    height: 733.939px;
+    margin-left: -366.97px;
+    margin-top: -366.97px;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-animation: rotation2 300s linear infinite;
+    -moz-animation: rotation2 300s linear infinite;
+    -o-animation: rotation2 300s linear infinite;
+    animation: rotation2 300s linear infinite;
+}
+
+.big-title{
+    height: 321.212px;
+    width: auto;
+    margin-left: -218.424px;
+    margin-top: -295.515px;
+}
+
+
+.search-box-container{
+    position: absolute;
+    z-index: 1003;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 375px;
+    margin-left: -187.5px;
+    margin-top: -5px;
+}
+
+.search-box{
+    padding: 3px;
+    border: 1px solid #818db5;
+}
+.search-box-linner{
+    height: 46px;
+    border: 2px solid #c2c9de;
+    line-height: 46px;
+    background-color: rgba(42,56,91,.3);
+}
+.selection{
+    position: relative;
+    z-index: 1003;
+    float: left;
+    width: 90px;
+    padding: 11px 6px;
+    border-right: 2px solid #6d759f;
+    font-size: 15px;
+    line-height: 20px;
+    color: #cccad7;
+    cursor: pointer;
+}
+.selection a , .selection label{
+    cursor: pointer;
+}
+.selection label{
+    display: inline-block;
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.select-tag{
+    position: relative;
+}
+
+.selection ul{
+    display: none;
+}
+
+.selection ul{
+    position: absolute;
+    z-index: 1002;
+    top: 42px;
+    left: -2px;
+    width: 105%;
+    padding: 0;
+    border: 2px solid rgba(255,255,255,.39);
+    list-style: none;
+}
+
+.selection ul li{
+    padding-left: 7px;
+    background-color: #fff;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 38px;
+    color: #334784;
+}
+
+.selection a:hover{
+    color: #fff;
+}
+.angle{
+    position: absolute;
+    top: 50%;
+    right: -19px;
+    margin-top: -6.5px;
+    border-top: 7px solid #fff;
+    border-right: 7px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 7px solid transparent;
+}
+.changeAngle{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);;
+}
+
+.input{
+    height: 0;
+    padding-right: 80px;
+    padding-left: 105px;
+    background-color: rgba(42,56,91,.5)
+}
+.input input{
+    width: 100%;
+    height: 20px;
+    margin-left: -1px;
+    padding: 13px 0 12px;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    top: -1px;
+}
+
+.button{
+    float: right;
+    color: #334784;
+    background-color: #fff;
+    padding: 11px 9px;
+    font-size: 15px;
+    line-height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.button a{
+    text-decoration: none;
+    color: #334784;
+}
+
+.button:hover{
+    padding-top: 13px;
+}
+
+.search-tag{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.search-tag a{
+    text-decoration: none;
+    color: rgba(255,255,255,.7);
+}
+.search-tag a:hover{
+    color: #fff;
+}
+.search-tag ul li{
+    float: left;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    line-height: 25px;
+    font-size: 12px;
+    /*text-align: center;*/
+}
+.footer-ul{
+    width: 360px;
+    margin: auto;
+}
+.footer a{
+    font-family: '宋体';
+    text-decoration: none;
+    color: rgba(255,255,255,.9);
+}
+.footer ul{
+    list-style: none;
+    text-align: center;
+
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li+li:before , .search-tag ul li+li:before{
+    content: '|';
+    margin: 0 8px;
+    color: #fff;
+}
+
+
+
+@keyframes rotation1{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotation1 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-webkit-keyframes rotation1 {
+     from {-webkit-transform: rotate(0deg);}
+     to {-webkit-transform: rotate(360deg);}
+ }
+@-o-keyframes rotation1 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+
+
+@keyframes rotation2{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes rotation2 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+@-webkit-keyframes rotation2 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
+@-o-keyframes rotation2 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg);}
+}
